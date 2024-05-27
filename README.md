@@ -1,4 +1,4 @@
-👋 Hi I’m Krystle, I am creating a restful API. Generated data from Mockaroo to give me member details, library books, 
+👋 Hi I’m Krystle, I am creating a restful API. Used Mockaroo to generated data for my library to give me member details, books, 
 and rental details. Loving this project to get me better acquainted with Node, Express, generating data and view engines. 
 
 💻 Technology used ... VSC, Mockaroo to generate data, EJS view engine, Express, and Node
