@@ -4,23 +4,32 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title> Library </title>
+
+  <a href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css "></a> 
+
+  <!--  ************************************************** Style ***************************************************** -->
 <style>
   body {
-background-color: #153448;
+background-color: #F1F1F1;
   }
 
+  .title {
+    text-align: center;
+    color: #191919;
+  }
+  
   h1 {
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    color: whitesmoke;
-    text-align: center;
+    color: #191919;
+    text-align: left;
   }
 
 label {
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   font-size: 18px;
-  color: whitesmoke;
+  color: #191919;
   display: flex;
-  text-align: center;
+  text-align: left
   justify-content: left;
 }
 
@@ -31,13 +40,13 @@ button {
 }
 
 </style>
-
-
 </head>
+
+  <!--  ************************************************** Body ***************************************************** -->
 <body>
   
-  <h1> Get Hooked on Books. Become a Library Member Today! </h1>
-
+  <h1 class="title" > Get Hooked on Books. Become a Library Member Today! </h1>
+<hr>
 
   <h1>Create A New User</h1>
   <br>
@@ -55,6 +64,26 @@ button {
     </label>
     <br /> 
     <input style="display: flex; align-content: center; justify-content: center;" type="submit" value= "Create User" />
+  </form>
+  <br>
+  <hr>
+
+  <h1>Delete A New User</h1>
+  <br>
+  <!-- <form action="/api/users?api-key=perscholas" method="POST"> -->
+    <label for="name">
+      Name: <input type="text" id="name" name="name" />
+    </label>
+    <br />
+    <label for="email">
+      Email: <input type="email" id="email" name="email" />
+    </label>
+    <br />
+    <label for="username">
+      Username: <input type="text" id="username" name="username" />
+    </label>
+    <br /> 
+    <input style="display: flex; align-content: center; justify-content: center;" type="submit" value= "Come Back Later" />
   </form>
 
 </body>
