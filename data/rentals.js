@@ -1,4 +1,7 @@
-const bookRentals = [
+// The "rentals" data will include information about
+// all the books checked out including check-out/in dates and ids.
+
+const rentals = [
   {
     checkout_id: 1,
     book_id: "592166651-3",

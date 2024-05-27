@@ -1,3 +1,6 @@
+// The "members" data will include information about
+// all of the members of the library.
+
 const members = [
   {
     member_id: 1,

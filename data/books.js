@@ -1,3 +1,6 @@
+// The "books" data will include information about
+// all the books that are in the library.
+
 const books = [
   {
     book_title: "Rev",
