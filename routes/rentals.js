@@ -11,9 +11,22 @@ router.get("/new", (req, res) => {
 });
 
 
-router.get("/:rentalId", (req, res) => {
-  req.params.rentalId;
+router
+.route("/:rentalId")
+.get((req, res) => {
   res.send(`Get Rental With ID ${req.params.id}`)
+})
+.put((req, res) => {
+  res.send(`Update Rental With ID ${req.params.id}`)
+})
+.delete((req, res) => {
+  res.send(`Delete Rental With ID ${req.params.id}`)
+})
+
+
+router.param("id", (req, res, next, id) => {
+  console.log(id)
+  next()
 })
 
 
