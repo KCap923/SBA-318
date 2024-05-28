@@ -17,7 +17,7 @@ router.get("/new", (req, res) => {
 
 router.get("/:bookId", (req, res) => {
   req.params.bookId
-  res.send(`Get Book With ID ${re.params.id}`)
+  res.send(`Get Book With ID ${req.params.id}`)
 })
 
 
