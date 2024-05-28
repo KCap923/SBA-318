@@ -44,50 +44,20 @@ app.get("/", (req, res) => {
   res.render("index");
 });
 
-
-
-// app.get("/books", (req, res) => {
-//   console.log("Books")
-//   res.render("books");
-// });
-
-// app.get("/members", (req, res) => {
-//   console.log("Members")
-//   res.render("members");
-// });
-
-// app.get("/rentals", (req, res) => {
-//   console.log("Rentals")
-//   res.render("rentals");
-// });
-
-
-
-app.get("/chars/new", (req, res) => {
-  res.sendFile("/member/newChar.ejs", {
-    root:__dirname,
-  });
+app.get("/books", (req, res) => {
+  console.log("Books running!")
+  res.render("books");
 });
 
+app.get("/members", (req, res) => {
+  console.log("Members running!")
+  res.render("members");
+});
 
-
-
-
-// app.get("/members", function(req, res) {
-//   res.sendFile(__dirname + "/members.html");
-// });
-
-// app.get("/rentals", function(req, res) {
-//   res.sendFile(__dirname + "/rentals.html");
-// });
-
-// app.get("/member/:member", function(req, res) {
-//   res.send("member" + {person: req.params.member} );
-// });
-
-
-
-
+app.get("/rentals", (req, res) => {
+  console.log("Rentals running!")
+  res.render("rentals");
+});
 
 
 
